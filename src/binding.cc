@@ -20,12 +20,12 @@
                         clingo_symbol_t const *arguments, size_t arguments_size, 
                         void *data, clingo_symbol_callback_t symbol_callback, 
                         void *symbol_callback_data) {
-        std::cerr << "Ground callback" << std::endl;
-        std::cerr << "Name: " << name << std::endl;
-        std::cerr << "Arguments size: " << arguments_size << std::endl;
-        std::cerr << "Data: " << data << std::endl;
-        std::cerr << "Symbol callback: " << symbol_callback << std::endl;
-        std::cerr << "Symbol callback data: " << symbol_callback_data << std::endl;
+        std::cout << "Ground callback" << std::endl;
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Arguments size: " << arguments_size << std::endl;
+        std::cout << "Data: " << data << std::endl;
+        std::cout << "Symbol callback: " << symbol_callback << std::endl;
+        std::cout << "Symbol callback data: " << symbol_callback_data << std::endl;
 
         // if helper, insert it twice as big(should be a number)
         if (strcmp(name, "helper") == 0) {
